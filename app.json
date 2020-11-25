@@ -1,0 +1,12 @@
+{
+  "name": "keycard-ios-test",
+  "displayName": "keycard-ios-test",
+  "expo": {
+    "name": "keycard-ios-test",
+    "slug": "keycard-ios-test",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
