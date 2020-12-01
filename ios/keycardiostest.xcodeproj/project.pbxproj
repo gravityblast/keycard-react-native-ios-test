@@ -29,6 +29,7 @@
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-keycardiostest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keycardiostest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		653C3FFE257652AF004235EA /* keycardiostest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "keycardiostest-Bridging-Header.h"; sourceTree = "<group>"; };
 		653C3FFF257652AF004235EA /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		6562B76A257682D50087BEEC /* Keycard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keycard.entitlements; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-keycardiostest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keycardiostest.debug.xcconfig"; path = "Target Support Files/Pods-keycardiostest/Pods-keycardiostest.debug.xcconfig"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-keycardiostest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keycardiostest.release.xcconfig"; path = "Target Support Files/Pods-keycardiostest/Pods-keycardiostest.release.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = keycardiostest/SplashScreen.storyboard; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				6562B76A257682D50087BEEC /* Keycard.entitlements */,
 				653C3FFF257652AF004235EA /* Bridge.swift */,
 				13B07FAE1A68108700A75B9A /* keycardiostest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -159,6 +161,7 @@
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = DTX7Z4U3YA;
 						LastSwiftMigration = 1220;
 					};
 				};
@@ -320,7 +323,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.name.keycardiostest;
+				PRODUCT_BUNDLE_IDENTIFIER = status.im.Examples..KeycardIOSTest;
 				PRODUCT_NAME = keycardiostest;
 				SWIFT_OBJC_BRIDGING_HEADER = "keycardiostest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -345,7 +348,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.name.keycardiostest;
+				PRODUCT_BUNDLE_IDENTIFIER = status.im.Examples..KeycardIOSTest;
 				PRODUCT_NAME = keycardiostest;
 				SWIFT_OBJC_BRIDGING_HEADER = "keycardiostest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -381,8 +384,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = Keycard.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = DTX7Z4U3YA;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -441,8 +447,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = Keycard.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = DTX7Z4U3YA;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
