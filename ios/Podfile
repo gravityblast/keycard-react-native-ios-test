@@ -10,7 +10,7 @@ target 'keycardiostest' do
 
   use_react_native!(:path => config["reactNativePath"])
 
-  pod "react-native-status-keycard", git: "https://github.com/status-im/react-native-status-keycard.git", branch: "feature/ios"
+  pod "react-native-status-keycard", path: "../node_modules/react-native-status-keycard"
   pod "Keycard", git: "https://github.com/status-im/Keycard.swift.git"
   pod 'secp256k1', git: "https://github.com/status-im/secp256k1.swift.git", submodules: true
 
