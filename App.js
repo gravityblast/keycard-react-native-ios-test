@@ -2,6 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import { NativeModules } from 'react-native'
+
+NativeModules.RNStatusKeycard.nfcIsSupported().then((b) => console.log("Has NFC: " + b));
+
 export default function App() {
   return (
     <View style={styles.container}>

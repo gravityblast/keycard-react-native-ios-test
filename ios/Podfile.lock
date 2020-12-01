@@ -275,6 +275,9 @@ PODS:
     - React-cxxreact (= 0.63.3)
     - React-jsi (= 0.63.3)
   - React-jsinspector (0.63.3)
+  - react-native-status-keycard (2.5.27):
+    - Keycard
+    - React
   - React-RCTActionSheet (0.63.3):
     - React-Core/RCTActionSheetHeaders (= 0.63.3)
   - React-RCTAnimation (0.63.3):
@@ -413,6 +416,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-status-keycard (from `https://github.com/status-im/react-native-status-keycard.git`, branch `feature/ios`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -515,6 +519,9 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-status-keycard:
+    :branch: feature/ios
+    :git: https://github.com/status-im/react-native-status-keycard.git
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -577,6 +584,9 @@ CHECKOUT OPTIONS:
   Keycard:
     :commit: 302c75c5c80d27b9f4c0a1c00922059d27b70087
     :git: https://github.com/status-im/Keycard.swift.git
+  react-native-status-keycard:
+    :commit: 3f1e320b7a9a77e5bba42e86528a58adf805f808
+    :git: https://github.com/status-im/react-native-status-keycard.git
   secp256k1:
     :commit: 1dcac13e9d88e6b71b094cdc58c1706e26cefa3b
     :git: https://github.com/status-im/secp256k1.swift.git
@@ -623,6 +633,7 @@ SPEC CHECKSUMS:
   React-jsi: df07aa95b39c5be3e41199921509bfa929ed2b9d
   React-jsiexecutor: b56c03e61c0dd5f5801255f2160a815f4a53d451
   React-jsinspector: 8e68ffbfe23880d3ee9bafa8be2777f60b25cbe2
+  react-native-status-keycard: 69bd380cea5958b057731ea7b59710f4296888d7
   React-RCTActionSheet: 53ea72699698b0b47a6421cb1c8b4ab215a774aa
   React-RCTAnimation: 1befece0b5183c22ae01b966f5583f42e69a83c2
   React-RCTBlob: 0b284339cbe4b15705a05e2313a51c6d8b51fa40
@@ -653,6 +664,6 @@ SPEC CHECKSUMS:
   Yoga: 7d13633d129fd179e01b8953d38d47be90db185a
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: f2a2cee38a86e4cdf46a02f18f18dec54ba937d4
+PODFILE CHECKSUM: 839c80ac3b5b480add5008b12dad22c0b304bd95
 
 COCOAPODS: 1.10.0

@@ -14,6 +14,7 @@ target 'keycardiostest' do
   pod "Keycard", git: "https://github.com/status-im/Keycard.swift.git"
   pod 'secp256k1', git: "https://github.com/status-im/secp256k1.swift.git", submodules: true
 
+  # pod "react-native-status-keycard", path: "../../react-native-status-keycard"
   # pod "Keycard", path: "../../Keycard.swift"
   # pod 'secp256k1.swift', path: "../../secp256k1.swift", :modular_headers => true
 
