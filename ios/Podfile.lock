@@ -105,7 +105,7 @@ PODS:
   - glog (0.3.5)
   - Keycard (3.0.0):
     - CryptoSwift
-    - secp256k1.swift
+    - secp256k1
   - OpenSSL-Universal (1.0.2.20):
     - OpenSSL-Universal/Static (= 1.0.2.20)
   - OpenSSL-Universal/Static (1.0.2.20)
@@ -341,7 +341,7 @@ PODS:
     - React-Core
   - RNScreens (2.10.1):
     - React
-  - secp256k1.swift (0.1.4)
+  - secp256k1 (0.1.4)
   - UMAppLoader (1.3.0)
   - UMBarCodeScannerInterface (5.3.0)
   - UMCameraInterface (5.3.0)
@@ -364,7 +364,6 @@ PODS:
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
-  - CryptoSwift
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
   - EXErrorRecovery (from `../node_modules/expo-error-recovery/ios`)
@@ -401,7 +400,7 @@ DEPENDENCIES:
   - FlipperKit/SKIOSNetworkPlugin (~> 0.54.0)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
-  - "Keycard (from `git@github.com:gravityblast/Keycard.swift.git`)"
+  - Keycard (from `https://github.com/status-im/Keycard.swift.git`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
   - React (from `../node_modules/react-native/`)
@@ -427,7 +426,7 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
-  - "secp256k1.swift (from `git@github.com:gravityblast/secp256k1.swift.git`, branch `podspec`)"
+  - secp256k1 (from `https://github.com/status-im/secp256k1.swift.git`)
   - UMAppLoader (from `../node_modules/unimodules-app-loader/ios`)
   - UMBarCodeScannerInterface (from `../node_modules/unimodules-barcode-scanner-interface/ios`)
   - UMCameraInterface (from `../node_modules/unimodules-camera-interface/ios`)
@@ -495,7 +494,7 @@ EXTERNAL SOURCES:
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   Keycard:
-    :git: "git@github.com:gravityblast/Keycard.swift.git"
+    :git: https://github.com/status-im/Keycard.swift.git
   RCTRequired:
     :path: "../node_modules/react-native/Libraries/RCTRequired"
   RCTTypeSafety:
@@ -542,9 +541,9 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
-  secp256k1.swift:
-    :branch: podspec
-    :git: "git@github.com:gravityblast/secp256k1.swift.git"
+  secp256k1:
+    :git: https://github.com/status-im/secp256k1.swift.git
+    :submodules: true
   UMAppLoader:
     :path: "../node_modules/unimodules-app-loader/ios"
   UMBarCodeScannerInterface:
@@ -576,11 +575,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Keycard:
-    :commit: 507be7e89ec2ab88a0a26650bca1eb9ae7471bcf
-    :git: "git@github.com:gravityblast/Keycard.swift.git"
-  secp256k1.swift:
-    :commit: 5f7c66b59df50bb6f4f4308c8de9f3afa7f6d543
-    :git: "git@github.com:gravityblast/secp256k1.swift.git"
+    :commit: 302c75c5c80d27b9f4c0a1c00922059d27b70087
+    :git: https://github.com/status-im/Keycard.swift.git
+  secp256k1:
+    :commit: 1dcac13e9d88e6b71b094cdc58c1706e26cefa3b
+    :git: https://github.com/status-im/secp256k1.swift.git
+    :submodules: true
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
@@ -611,7 +611,7 @@ SPEC CHECKSUMS:
   FlipperKit: ab353d41aea8aae2ea6daaf813e67496642f3d7d
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4
   glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
-  Keycard: c6a2a9e76b312950b7c0be06ab0c536fef469f60
+  Keycard: 793197f4817a953ec21cb6c0173ea5a722deb0e6
   OpenSSL-Universal: ff34003318d5e1163e9529b08470708e389ffcdd
   RCTRequired: 48884c74035a0b5b76dbb7a998bd93bcfc5f2047
   RCTTypeSafety: edf4b618033c2f1c5b7bc3d90d8e085ed95ba2ab
@@ -636,7 +636,7 @@ SPEC CHECKSUMS:
   RNGestureHandler: b6b359bb800ae399a9c8b27032bdbf7c18f08a08
   RNReanimated: e03f7425cb7a38dcf1b644d680d1bfc91c3337ad
   RNScreens: b748efec66e095134c7166ca333b628cd7e6f3e2
-  secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
+  secp256k1: 42ccf84e5c7add5e8edbce1f1891fd4d93b9623f
   UMAppLoader: 5db5dc03176c6238da9c8b3657a370137882a4ad
   UMBarCodeScannerInterface: 017672479f93de88d94c3a50dfb66b5348b65989
   UMCameraInterface: 22bd2c4bf15dcf68530368fa5704af7490818457
@@ -653,6 +653,6 @@ SPEC CHECKSUMS:
   Yoga: 7d13633d129fd179e01b8953d38d47be90db185a
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: be9ab6ee6b5957e67caddad1abb67db9cae436e9
+PODFILE CHECKSUM: f2a2cee38a86e4cdf46a02f18f18dec54ba937d4
 
 COCOAPODS: 1.10.0

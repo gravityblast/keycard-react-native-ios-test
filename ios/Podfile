@@ -10,12 +10,12 @@ target 'keycardiostest' do
 
   use_react_native!(:path => config["reactNativePath"])
 
-  pod 'CryptoSwift'
-  pod "Keycard", git: "git@github.com:gravityblast/Keycard.swift.git"
-  pod 'secp256k1.swift', git: "git@github.com:gravityblast/secp256k1.swift.git", :branch => "podspec"
+  pod "react-native-status-keycard", git: "https://github.com/status-im/react-native-status-keycard.git", branch: "feature/ios"
+  pod "Keycard", git: "https://github.com/status-im/Keycard.swift.git"
+  pod 'secp256k1', git: "https://github.com/status-im/secp256k1.swift.git", submodules: true
 
   # pod "Keycard", path: "../../Keycard.swift"
-  # pod 'secp256k1.swift', path: "../../secp256k1.swift"
+  # pod 'secp256k1.swift', path: "../../secp256k1.swift", :modular_headers => true
 
   # Enables Flipper.
   #
