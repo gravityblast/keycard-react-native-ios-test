@@ -581,7 +581,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Keycard:
-    :commit: 302c75c5c80d27b9f4c0a1c00922059d27b70087
+    :commit: 367271eb2269f5050e051b02cd3625f3512ed58a
     :git: https://github.com/status-im/Keycard.swift.git
   secp256k1:
     :commit: 1dcac13e9d88e6b71b094cdc58c1706e26cefa3b
@@ -660,6 +660,6 @@ SPEC CHECKSUMS:
   Yoga: 4bd86afe9883422a7c4028c00e34790f560923d6
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: cf3fa19cda8af71a720368b666a3125e1fedd411
+PODFILE CHECKSUM: 29968c2fb108cb02fe13149dd2520ff8f2a29ea8
 
 COCOAPODS: 1.10.0
